@@ -7,7 +7,7 @@
         "displayName": "GitLab",
         "name": "gitlab",
         "version": "10.0.4",
-        "location": "https://hub.docker.com/r/sameersbn/gitlab/",
+        "location": "https://hub.docker.com/r/sstruss/gitlab-ce-armhf/",
         "type": "app"
     },
     {
