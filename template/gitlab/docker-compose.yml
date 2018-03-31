@@ -1,6 +1,6 @@
 postgresql:
   restart: always
-  image: arm32v7/postgres:9.6-2
+  image: arm32v7/postgres:latest
   environment:
     - DB_USER=gitlab
     - DB_PASS=password
