@@ -8,7 +8,7 @@ postgresql:
     - DB_EXTENSION=pg_trgm
 gitlab:
   restart: always
-  image: cfriedt/armhf-gitlab-ce:latest
+  image: ulm0/gitlab:latest
   links:
     - redis:redisio
     - postgresql:postgresql
@@ -25,5 +25,3 @@ gitlab:
 redis:
   restart: always
   image: qnapnas/qiot-redis_armhf:latest
-  command:
-    - --loglevel warning
