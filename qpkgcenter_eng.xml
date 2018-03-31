@@ -384,12 +384,12 @@
 		<name>GitLab</name>
 		<internalName>gitlab</internalName>
 		<version>8.2.3</version>
-		<arch>amd64</arch>
+		<arch>amdhf</arch>
 		<category>application</category>
 		<imageType>app</imageType>
 		<repository>dockerhub</repository>
 		<icon>http://download.qnap.com/QPKG/images/QPKG/container/app_gitlab.png</icon>
-		<location>https://hub.docker.com/r/sameersbn/gitlab/</location>
+		<location>https://hub.docker.com/r/cfriedt/armhf-gitlab-ce/</location>
 		<description>
 			<![CDATA[GitLab is a web-based Git repository manager with code reviews, issue tracking, activity feeds and wikis.]]>
 		</description>
