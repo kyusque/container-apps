@@ -1,6 +1,6 @@
 postgresql:
   restart: always
-  image: qnapnas/qcontactz-mongodb-nodejs_armhf:latest
+  image: qnapnas/qcontactz-mongodb-nodejs_armhf:0.4
   environment:
     - DB_USER=gitlab
     - DB_PASS=password
