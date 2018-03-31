@@ -1,6 +1,6 @@
 postgresql:
   restart: always
-  image: armhf/postgres:9.6-2
+  image: arm32v7/postgres:9.6-2
   environment:
     - DB_USER=gitlab
     - DB_PASS=password
@@ -8,7 +8,7 @@ postgresql:
     - DB_EXTENSION=pg_trgm
 gitlab:
   restart: always
-  image: https://hub.docker.com/r/cfriedt/armhf-gitlab-ce/
+  image: cfriedt/armhf-gitlab-ce:latest
   links:
     - redis:redisio
     - postgresql:postgresql
@@ -24,6 +24,6 @@ gitlab:
     - GITLAB_SECRETS_SECRET_KEY_BASE=qcs-gitlab-app
 redis:
   restart: always
-  image: armhf/redis:latest
+  image: arm32/v7:latest
   command:
     - --loglevel warning
