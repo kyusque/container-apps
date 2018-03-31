@@ -24,6 +24,6 @@ gitlab:
     - GITLAB_SECRETS_SECRET_KEY_BASE=qcs-gitlab-app
 redis:
   restart: always
-  image: arm32/v7:latest
+  image: arm32v7:latest
   command:
     - --loglevel warning
